@@ -48,3 +48,13 @@ meta.log(meta.value)
 const criarMeta = () => {}
 
 function criarMeta() {}
+
+## While
+
+function start() {
+    let count = 0
+    while(count <= 10) {
+        console.log(count)
+        count+= 1
+    }
+}
