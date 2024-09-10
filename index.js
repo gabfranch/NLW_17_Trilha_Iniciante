@@ -1,10 +1,16 @@
-// hello world
-const mensagem = 'hello global'
 
-{
-    const mensagem = 'hello local'
-    console.log(mensagem)
+let meta = {
+    value: 'ler um livro todo mês',
+    checked: false,
+    log: (info) => {
+        console.log(info)
+    }
 }
 
+meta.value = 'tocar piano'
+meta.log(meta.value)
 
-console.log(mensagem);
+// functions  // arrow functions
+const criarMeta = () => {}
+
+// function criarMeta() {}
