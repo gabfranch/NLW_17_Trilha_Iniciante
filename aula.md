@@ -78,3 +78,51 @@ function start() {
 }
 
 start()
+
+## Módulos em Node.js
+
+const { select } = require('@inquirer/prompts')
+
+promp -> fazer pergunta pro usuário
+
+## Programação Assíncrona e Promises
+
+const { select } = require('@inquirer/prompts')
+
+const start = async () => {
+
+    while(true) {
+
+        const opcao = await select({   -> PROMISE
+            message: 'Menu >',
+            choices: [
+                {
+                    name: 'Cadastrar meta',
+                    value: 'cadastrar'
+                },
+                {
+                    name: 'Listar metas',
+                    value: ''
+                },
+                {
+                    name: 'Sair',
+                    value: 'sair'
+                }
+            ]
+        })
+
+        switch(opcao) {
+            case 'cadastrar':
+                console.log('vamos cadastrar')
+                break
+            case 'listar':
+                console.log('vamos listar')
+                break
+            case 'sair':
+                console.log('Até a próxima!')
+                return 
+        }
+    }
+}
+
+start()
