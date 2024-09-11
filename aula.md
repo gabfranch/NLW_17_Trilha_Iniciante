@@ -54,6 +54,14 @@ function criarMeta() {}
 todo tido de dado vira objeto, é só colocar um .
 .forEach, .find, .push -> Métodos
 
+-----
+
+const metasRealizadas = async () => {
+    const realizadas = metas.filter((meta) => {   -> Higher Order Function -> método que requer uma função dentro
+        return true
+    })
+}
+
 ## While
 
 function start() {
