@@ -79,6 +79,13 @@ function start() {
 
 start()
 
+---------------
+
+if(meta.length == 0) {
+        console.log('A meta não pode ser vazia.')
+        return
+    }
+
 ## Módulos em Node.js
 
 const { select } = require('@inquirer/prompts')
