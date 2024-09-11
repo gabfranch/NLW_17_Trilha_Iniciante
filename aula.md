@@ -49,6 +49,11 @@ const criarMeta = () => {}
 
 function criarMeta() {}
 
+-----
+
+todo tido de dado vira objeto, é só colocar um .
+.forEach, .find, .push -> Métodos
+
 ## While
 
 function start() {
