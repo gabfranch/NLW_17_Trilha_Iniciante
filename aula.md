@@ -146,3 +146,32 @@ const start = async () => {
 }
 
 start()
+
+
+## Try catch
+
+const carregar_metas = async () => {
+    try {
+        const dados = await fs.readFile('metas.json', 'utf-8')
+        metas = JSON.parse(dados)
+    }
+    catch(erro) {
+        metas = []
+    }
+}
+
+## JSON
+
+const carregar_metas = async () => {
+    try {
+        const dados = await fs.readFile('metas.json', 'utf-8')
+        metas = JSON.parse(dados) -> transforma de JSON para JS
+    }
+    catch(erro) {
+        metas = []
+    }
+}
+
+const salvar_metas = async () => {
+    await fs.writeFile('metas.json', JSON.stringify(metas, null, 2)) -> de JSON para JS
+}
